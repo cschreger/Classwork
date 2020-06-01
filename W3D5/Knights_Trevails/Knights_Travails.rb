@@ -46,7 +46,6 @@ class KnightPathFinder
 
     def find_path(end_node)
         end_node = self.build_move_tree.bfs(end_node)
-        # debugger
         trace_path_back(end_node)
     end
 
@@ -58,12 +57,7 @@ class KnightPathFinder
             current = current.parent
         end
         [root_node.value] + (result.reverse)
-    end
-
-    kpf = KnightPathFinder.new([0,0])
-    p kpf.find_path([6,2])
-    # p kpf.trace_path_back([7,6])
-    
+    end    
 end
 
 
