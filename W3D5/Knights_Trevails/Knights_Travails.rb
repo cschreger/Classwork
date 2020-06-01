@@ -1,5 +1,5 @@
 require_relative "00_tree_node"
-
+require "byebug"
 class KnightPathFinder
 
     attr_accessor :root_node, :considered_positions
@@ -36,28 +36,34 @@ class KnightPathFinder
 
             new_move_positions(first.value).each do |move|
                 child = PolyTreeNode.new(move)
-                child.parent = first
+                # child.parent = first
+                first.add_child(child)
                 queue << child
             end
         end
         @root_node
     end
+
+    def find_path(end_node)
+        end_node = self.build_move_tree.bfs(end_node)
+        # debugger
+        trace_path_back(end_node)
+    end
+
+    def trace_path_back(end_node)
+        result = []
+        current = end_node
+        while !current.parent.nil?
+            result << current.value
+            current = current.parent
+        end
+        [root_node.value] + (result.reverse)
+    end
+
+    kpf = KnightPathFinder.new([0,0])
+    p kpf.find_path([6,2])
+    # p kpf.trace_path_back([7,6])
     
-    # def bfs(target_value)
-    #     queue = [self]
-        
-    #     while !queue.empty?
-    #         first = queue.shift
-    #         return first if first.value == target_value
-    #         first.children.each do |child|
-    #             queue << child
-    #         end
-    #     end 
-    #     nil
-    # end
-
-
-
 end
 
 
