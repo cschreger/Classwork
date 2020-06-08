@@ -207,7 +207,7 @@ end
 
 if __FILE__ == $PROGRAM_NAME
   puts "Play the dumb computer!"
-  hp = HumanPlayer.new("Ned")
+  hp = HumanPlayer.new("Kylie")
   cp = ComputerPlayer.new
 
   TicTacToe.new(hp, cp).run
