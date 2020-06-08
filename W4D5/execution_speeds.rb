@@ -16,4 +16,3 @@ def sub_sum(arr)
     largest
 end
 
-p sub_sum([2, 3, -6, 7, -6, 7])
