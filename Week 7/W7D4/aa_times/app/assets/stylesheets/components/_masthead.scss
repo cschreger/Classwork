@@ -49,6 +49,7 @@
 .masthead-links li {
 	margin-left: 10px;
 	border-right: 1px solid $light-gray;
+	padding-right: 10px
 }
 
 .masthead-links li:last-child {
@@ -71,10 +72,26 @@
 	background-color: $lightest-gray;
 }
 
-.masthead-links a,
-.masthead-links button, 
-.masthead-links time {
-	margin-right: 10px;
+
+.masthead-links > ul > li > a:nth-child(2):hover {
+	text-decoration: underline;
+}
+
+
+.masthead-links > ul > li > a:nth-child(3):hover {
+	text-decoration: underline;
+}
+
+.masthead-links > ul > li:nth-child(4):hover {
+	background-color: #f7f7f5;
+	cursor: pointer;
+	background-clip: content-box;
+}
+
+.masthead-links > ul > li:nth-child(5):hover {
+	background-color: #f7f7f5;
+	cursor: pointer;
+	background-clip: content-box;
 }
 
 .masthead-links i {
@@ -83,4 +100,8 @@
 
 .masthead-links strong {
 	color: green;
+}
+
+.language-nav > ul > li:hover {
+	text-decoration: underline;
 }

@@ -1,0 +1,26 @@
+.sections-nav {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #e2e2e2;
+
+}
+
+.sections-nav ul {
+    display: flex;
+}
+
+.sections-nav > ul > li {
+    font-family: sans-serif;
+    padding: 10px;
+}
+
+.sections-nav > ul > li:hover:not(:last-child) {
+    background-color: #f7f7f5;
+	cursor: pointer;
+	background-clip: content-box;
+}
+
+.sections-nav ul > li:hover:last-child {
+    text-decoration: underline;
+    cursor: pointer;
+}

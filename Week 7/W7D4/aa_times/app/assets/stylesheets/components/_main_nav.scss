@@ -1,8 +1,10 @@
 .main-nav {
     display: flex;
     justify-content: space-between;
-    padding: 15px;
+    padding-bottom: 12px;
+    padding-top: 10px;
     align-items: center;
+    border-bottom: 1px solid #efefef;
 }
 
 .left-nav > ul,
@@ -16,8 +18,8 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 10px;
     text-transform: uppercase;
-    margin: 20px;
-    padding: 10px;
+    margin: 10px;
+    font-weight: bold;
 }
 
 .right-nav > ul > li {
@@ -42,6 +44,6 @@
 
 
 .right-nav i {
-    font-size: 25px;
+    font-size: 18px;
     margin: 7px;
 }
