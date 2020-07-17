@@ -13,6 +13,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 window.store = store;
-window.receiveTodo = receiveTodo;
+// window.receiveTodo = receiveTodo;
 window.receiveTodos = receiveTodos;
 window.allTodos = allTodos;
