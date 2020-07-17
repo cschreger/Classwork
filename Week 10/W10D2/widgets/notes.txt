@@ -1,0 +1,15 @@
+// classical component
+class DogIndex extends React.Component { // Component needs to have capital 'C' 
+  constructor(props) {
+    super(props); 
+      // need to invoke super to have access to 'this' within the constructor
+      // if we invoke with props passed in, we will have access to this.props
+
+    // set initial state
+    this.state = {
+      totalVotes: 0,
+      gif: null,
+      selected: 'Corgi'
+    };
+}
+}
